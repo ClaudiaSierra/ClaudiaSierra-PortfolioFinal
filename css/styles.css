@@ -1,0 +1,782 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0&display=swap");
+
+:root {
+  --cream: #fff8f0;
+  --pink: #fe4870;
+  --teal: #279e96;
+  --yellow: #fffbcb;
+  --ink: #000000;
+  --page-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans";
+}
+a {
+  color: inherit;
+}
+.portfolio {
+  width: 100%;
+  margin: 0;
+}
+.page-section {
+  position: relative;
+  margin-bottom: 0;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+/* HERO — CLAUDIA SIERRA */
+
+.home {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1512 / 982;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+/* LOGO + MENU */
+
+.site-header {
+  position: absolute;
+  top: 3.56%;
+  left: 4.23%;
+  width: 91.54%;
+  height: 7.03%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.brand {
+  width: 143px;
+  height: 67px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.brand img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.navigation {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 56%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 0 17px;
+  border-bottom: 1px solid #000000;
+}
+
+.navigation a {
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navigation a {
+  display: inline-block;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navigation a:hover {
+  color: var(--teal);
+  transform: scale(1.08);
+}
+
+/* CLAUDIA */
+
+.home-name {
+  position: absolute;
+  left: 11.24%;
+  top: 12.32%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.home-name h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display";
+  font-size: clamp(42px, 6.35vw, 96px);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.home-name p {
+  margin: 5px 0 0 12%;
+  padding: 0;
+  color: var(--pink);
+  font-family: "DM Sans";
+  font-size: clamp(10px, 1.52vw, 23px);
+  font-weight: 300;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* PHOTO + DESCRIPTION */
+
+.home-intro {
+  position: static;
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.home-portrait {
+  position: absolute;
+  left: 29.3%;
+  top: 28.72%;
+  display: block;
+  width: 41.4%;
+  height: 42.57%;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-intro p {
+  position: absolute;
+  left: 72.62%;
+  top: 47.66%;
+  width: 19.45%;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  font-size: clamp(11px, 1.52vw, 23px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* JIMÉNEZ */
+
+.surname {
+  position: absolute;
+  left: 62.96%;
+  top: 75.05%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "DM Serif Display";
+  font-size: clamp(42px, 6.35vw, 96px);
+  font-weight: 400;
+  line-height: 1.04;
+  white-space: nowrap;
+}
+
+.about {
+  min-height: 656px;
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  gap: 5%;
+  padding: 34px 7% 34px;
+  align-items: stretch;
+  position: relative;
+  isolation: isolate;
+}
+.about::before {
+  z-index: 0;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 20%;
+  background-color: var(--teal);
+  box-shadow: none;
+  pointer-events: none;
+}
+.about-portrait {
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.about-copy {
+  position: relative;
+  z-index: 1;
+  padding: 55px 0 12px;
+}
+.eyebrow {
+  color: var(--pink);
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.about-copy h2 {
+  font-size: 62px;
+  line-height: 1.05;
+  margin: 0 0 8px;
+}
+
+.about-copy h2 span {
+  color: var(--teal);
+}
+
+.quote {
+  font-size: 23px;
+  margin: 0 0 30px;
+}
+
+.about-body {
+  width: 100%;
+  max-width: 656px;
+  box-sizing: border-box;
+}
+
+.about-body p {
+  font-family: "DM Sans";
+  flex-direction: column;
+  justify-content: flex-end;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 24px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
+.objective {
+  padding: 48px 5% 38px;
+}
+.objective-label {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 14px;
+  font-size: 26px;
+}
+.objective-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 8%;
+  align-items: center;
+  margin: 28px -10px 42px;
+  text-align: justify;
+}
+.objective-intro h2 {
+  font-size: 62px;
+  line-height: 1.12;
+  margin: 0;
+}
+.objective-intro > p {
+  font-size: 23px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.how-i-work {
+  max-width: 570px;
+  margin-bottom: 42px;
+}
+.how-copy {
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.5;
+  text-align: justify;
+}
+.process-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 22px 0;
+}
+.process-card {
+  min-height: 205px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.process-card span {
+  font-size: 18px;
+}
+.process-card h3 {
+  font-size: 26px;
+  margin: 10px 0 8px;
+}
+.process-card p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+.pink {
+  background: var(--pink);
+}
+.teal {
+  background: var(--teal);
+}
+.yellow {
+  background: var(--yellow);
+}
+.yellow span {
+  color: var(--pink);
+}
+
+.work {
+  padding: 42px 4% 52px;
+}
+.work-label {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 14px;
+  font-size: 26px;
+}
+.work-heading {
+  font-size: clamp(28px, 3vw, 62px);
+  margin: 20px 0 28px;
+}
+.project {
+  margin-bottom: 64px;
+}
+.gesture-grid,
+.light-grid {
+  display: grid;
+  gap: 8px;
+}
+.gesture-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gesture-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.55;
+  object-fit: cover;
+}
+.project-info {
+  margin-top: 22px;
+  max-width: 520px;
+}
+.project-info .eyebrow {
+  margin-bottom: 6px;
+}
+.project-info h3 {
+  font-size: 23px;
+  margin: 0 0 10px;
+}
+.project-info p:not(.eyebrow) {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #000000;
+}
+.download-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  border-radius: 40px;
+  background: var(--teal);
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+  transform-origin: center;
+}
+.download-button:hover,
+.download-button:focus-visible {
+  background: var(--pink);
+  color: white;
+  transform: scale(1.09);
+  box-shadow: 0 5px 16px #ff416f40;
+}
+
+.project-fragments > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-title-link {
+  text-decoration: none;
+}
+.project-title-link:hover {
+  color: var(--teal);
+  text-decoration: underline;
+}
+.light-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.light-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.project-aura {
+  display: grid;
+  grid-template-columns: minmax(180px, 38%) 1fr;
+  align-items: center;
+  gap: 7%;
+}
+.aura-cover {
+  width: 100%;
+  max-width: 390px;
+  display: block;
+}
+.project-aura .project-info {
+  margin-top: 0;
+}
+
+.commission-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 5% 0;
+}
+
+.commission-note p {
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex: 0 0 570px;
+  max-width: 570px;
+  text-align: justify;
+}
+
+.closing-logo {
+  display: block;
+  width: 202px;
+  height: 95px;
+  flex-shrink: 0;
+}
+.footer {
+  background: #000000;
+  color: var(--cream);
+  padding: 54px 8% 28px;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 10%;
+}
+.footer .eyebrow {
+  color: var(--pink);
+}
+.footer h2 {
+  font-size: 96px;
+  line-height: 1.1;
+  margin: 18px 0;
+  color: var(--yellow);
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 30px;
+  font-size: 23px;
+}
+.contact-details a {
+  color: #fffbd0;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  color: var(--pink);
+}
+.instagram {
+  font-size: 34px;
+  line-height: 1;
+  border: 2px solid #fffbd0;
+  border-radius: 9px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 18px;
+  margin-top: 60px;
+  color: var(--yellow);
+}
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer h2 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  /* GENERAL */
+  .portfolio {
+    width: 100%;
+    margin: 0;
+  }
+
+  .page-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* HOME */
+  .home {
+    aspect-ratio: auto;
+    min-height: 760px;
+    position: relative;
+  }
+
+  .site-header {
+    top: 15px;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .brand {
+    width: 48px;
+    flex-shrink: 0;
+  }
+
+  .navigation {
+    position: static;
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 12px;
+    padding-bottom: 10px;
+  }
+
+  .navigation a {
+    font-size: 9px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .home-name {
+    top: 115px;
+    left: 6%;
+    width: 90%;
+  }
+
+  .home-name h1 {
+    font-size: clamp(42px, 11vw, 65px);
+    line-height: 0.95;
+  }
+
+  .home-name p {
+    margin-left: 4%;
+    font-size: 11px;
+  }
+
+  .home-portrait {
+    left: 6%;
+    top: 240px;
+    width: 88%;
+    height: auto;
+    aspect-ratio: 626 / 418;
+  }
+
+  .home-intro p {
+    left: 6%;
+    top: auto;
+    bottom: 95px;
+    width: 82%;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .surname {
+    left: auto;
+    right: 5%;
+    top: auto;
+    bottom: 25px;
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  /* ABOUT ME */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px 7%;
+  }
+
+  .about-portrait {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    max-height: 560px;
+    aspect-ratio: 0.78;
+  }
+
+  .about::after {
+    top: 36%;
+    height: 14%;
+  }
+
+  .about-copy {
+    padding: 0 0 12px;
+    min-width: 0;
+  }
+
+  .about-body {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  /* ARTISTIC OBJECTIVE */
+  .objective {
+    padding: 32px 6% 28px;
+  }
+
+  .objective-intro {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin: 24px 0 30px;
+  }
+
+  .objective-intro h2 {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .process-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .process-card {
+    min-height: auto;
+  }
+
+  /* MY WORK */
+  .work {
+    padding: 30px 5% 35px;
+  }
+
+  .gesture-grid {
+    gap: 5px;
+  }
+
+  .project {
+    margin-bottom: 40px;
+  }
+
+  .light-grid {
+    gap: 7px;
+  }
+
+  .project-aura {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .aura-cover {
+    width: min(80%, 320px);
+  }
+
+  .project-fragments > img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* COMMISSIONS */
+  .commission-note {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 18px;
+    padding: 10px 0 0;
+  }
+
+  .commission-note p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .closing-logo {
+    width: 140px;
+    max-width: 55%;
+    height: auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    min-height: 0;
+    padding: 35px 7% 24px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer h2 {
+    font-size: clamp(36px, 10vw, 48px);
+  }
+
+  .contact-details {
+    padding-top: 0;
+    gap: 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+  }
+}
